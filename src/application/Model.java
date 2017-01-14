@@ -73,13 +73,13 @@ public class Model {
 		return grafo;
 	}
 	
+
 	public List<Creator> getColl(List<Creator> autori, UndirectedGraph<Creator, DefaultEdge> grafo){
 		List<Creator> vicini = new LinkedList<Creator>();
 		for(Creator c : autori){
 		 vicini = Graphs.neighborListOf(grafo, c);
 		}
-		return vicini;
-		
+		return vicini;	
 	}
 	
 	
@@ -93,75 +93,4 @@ public class Model {
 		
 	}
 
-	
-//	//CHIEDO
-//	public void buildGraoh() throws SQLException{
-//		grafo = new SimpleGraph<Creator, DefaultEdge>(DefaultEdge.class);
-//		List<Creator> vertici = getAll();
-//		for(Creator c : vertici){           //tutti autori come vertici
-//			grafo.addVertex(c);
-//		}
-//		Map<Integer, Integer> coppie = getMappa();   //ho le coppie di autori che hanno scritto almeno un articolo insieme, posso mettere gli archi tra queste?
-//		for(Integer i : coppie.values()){              //x tutti i valori della mappa
-//			Integer itemp = coppie.get(key);              //
-//			
-//		}
-//	}
-//	
-//	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//	private SimpleGraph<Creator, DefaultEdge> grafo=null;
-//	
-//	public List<String> getArticoli(int idAutore) throws SQLException{
-//		List<String> que = dao.getArticoli(idAutore);
-//		return que;
-//	}
-//
-//	public boolean isPres(int id_creator) throws SQLException{
-//		return dao.isCodiceAutorePresente(id_creator);
-//	}
-//	
-//	public List<Creator> dammiAutoriDiArticolo(int idArticolo) throws SQLException{
-//		List<Creator> que = dao.getDammiAutoriDiArticolo(idArticolo);
-//		return que;
-//	}
-//	
-//	
-//	public void buildGraph(int idArticolo) throws SQLException{
-//		grafo = new SimpleGraph<Creator, DefaultEdge>(DefaultEdge.class);
-//		Graphs.addAllVertices(grafo, dammiAutoriDiArticolo(idArticolo));         //ma se l atricolo è stato scritto da una sola persona? ho un grafo con un solo vertice?
-//		//collego autori che hanno almeno un articolo in comune (=coautori)
-//		
-//	}
 }

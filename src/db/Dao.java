@@ -164,29 +164,6 @@ public class Dao {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 //	public List<String> getArticoli(int idAutore) throws SQLException{   //ok
 //		Connection conn =DBConnect.getConnection();
 //		String query= "select title, a.eprintid from article a , authorship au where a.eprintid=au.eprintid and au.id_creator=? order by year DESC";

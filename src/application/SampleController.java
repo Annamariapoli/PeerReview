@@ -69,41 +69,6 @@ public class SampleController {
     		txtResult.appendText("Il formato non è corretto");
     		return;
     	}
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-//    	txtResult.clear();
-//    	try{
-//    		int id = Integer.parseInt(txtMatricola.getText());
-//    		if(id==0){
-//    			txtResult.appendText("Non esiste nessun autore con questo codice!\n");
-//    			return;
-//    		}
-//    		if(!m.isPres(id)){
-//    			txtResult.appendText("Il codice non esiste! \n ");
-//    			return;
-//    		}
-//    		List<String> articoli = m.getArticoli(id);
-//    		if(articoli.size()==0){
-//    			txtResult.appendText("L'autore non ha scritto articoli\n");
-//    			return;
-//    		}
-//    		for(String s : articoli){
-//    			txtResult.appendText(s+ " ");
-//    		}
-//    		
-//    		
-//    	}catch(Exception e){
-//    		txtResult.appendText("Il formato non è valido\n");
-//    		return;
-//    	}
-
     }
 
     @FXML
@@ -131,28 +96,12 @@ public class SampleController {
     	
     	for(Creator c : possibiliRevisori){
     		txtResult.appendText(c+" \n");
-    	}
-    	
-    	
-    	
-    	
-    	
+    	   }
+ 	
     	}catch(Exception e ){
     		txtResult.appendText("Errore nel formato!");
     		return;
     	}
-    	
-    	
-    	
-//    	txtResult.clear();
-//    	try{
-//    		int idArticolo = Integer.parseInt(txtArticolo.getText());
-//    		
-//    	}catch(Exception e){
-//    		txtResult.appendText("Il formato non è valido\n");
-//    		return;
-//    	}
-
     }
 
     @FXML
